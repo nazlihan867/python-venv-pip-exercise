@@ -19,3 +19,6 @@ plt.legend()
 
 # Diagramm anzeigen
 plt.show()
+
+# Diagramm als PNG-Datei sppeichern
+plt.plot('diagramm.png') 
