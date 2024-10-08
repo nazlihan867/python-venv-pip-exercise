@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-
+import pandas as pd 
 # Beispiel-Daten: Zahlen von 0 bis 9, Quadrat- und Kubikzahlen
 x = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] # Zahlen  
 y = [i**2 for i in x]              # Quadratzahlen
@@ -17,8 +17,12 @@ plt.ylabel('y', rotation='horizontal')
 # Legende anzeigen
 plt.legend()
 
+# Diagramm als PNG-Datei sppeichern
+plt.savefig('diagramm.png',dpi=300) 
 # Diagramm anzeigen
 plt.show()
 
-# Diagramm als PNG-Datei sppeichern
-plt.savefig('diagramm.png') 
+
+# DataFrame erstellen
+df = pd.DataFrame({'Zahl':x,'Quadrat':y,'Kubik':z})
+df.to_csv('zahlen.csv',index=False)
