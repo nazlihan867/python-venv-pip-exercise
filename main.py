@@ -21,4 +21,4 @@ plt.legend()
 plt.show()
 
 # Diagramm als PNG-Datei sppeichern
-plt.plot('diagramm.png') 
+plt.savefig('diagramm.png') 
